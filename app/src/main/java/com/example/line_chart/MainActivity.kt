@@ -68,9 +68,11 @@ class MainActivity : AppCompatActivity() {
 //        }
 
         lineChart.xAxis.granularity = 1f
-        lineChart.xAxis.axisMinimum = 0f
-        lineChart.xAxis.axisMaximum = 6f
+        //lineChart.xAxis.axisMinimum = 0f
+        //lineChart.xAxis.axisMaximum = 6f
         //lineChart.axisLeft.granularity = 10f
+        lineChart.xAxis.spaceMax = 1f
+        lineChart.xAxis.spaceMin = 1f
         lineChart.xAxis.valueFormatter = IndexAxisValueFormatter(week)
         lineChart.axisLeft.axisMaximum = 80f
         lineChart.axisLeft.axisMinimum = 30f
